@@ -1,0 +1,18 @@
+package exercise3;
+import java.util.Scanner;
+
+public class Exercise3 {
+
+    
+    public static void main(String[] args) {
+        Scanner scanner=new Scanner(System.in);
+        System.out.println("Nhap nam:");
+        int nam=scanner.nextInt();
+        if((nam%4==0||nam%400==0)&&nam%100!=0){
+            System.out.println(nam+" La nam nhuan!");
+        }else{
+            System.out.println(nam+" 2Khong phai nam nhuan!");
+        }
+    }
+    
+}
