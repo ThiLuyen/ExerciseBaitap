@@ -1,0 +1,29 @@
+package exercise.pkg2;
+
+import java.util.Scanner;
+
+public class Exercise2 {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Nhap diem toan: ");
+        float toan = scanner.nextFloat();
+        System.out.println("Nhap diem ly:");
+        float ly = scanner.nextFloat();
+        System.out.println("Nhap diem hoa: ");
+        float hoa = scanner.nextFloat();
+        double diemTrungBinh = (toan + ly + hoa) / 3;
+        System.out.println("Diem trung binh la:" + diemTrungBinh);
+        averageScore(toan, ly, hoa, diemTrungBinh);
+    }
+    public static void averageScore(float toan, float ly, float hoa, double diemTrungBinh) {
+        if (diemTrungBinh >= 8) {
+            System.out.println("Xuat sac!");
+        } else if (diemTrungBinh >= 6.5) {
+            System.out.println("Tot!");
+        } else if (diemTrungBinh >= 5) {
+            System.out.println("Trung Binh!");
+        } else {
+            System.out.println("Kem!");
+        }
+    }
+}
