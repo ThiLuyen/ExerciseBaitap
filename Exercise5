@@ -1,0 +1,22 @@
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Nhap so nguyen thu nhat:");
+        int a = scanner.nextInt();
+        System.out.println("Nhap so nguyen thu hai:");
+        int b = scanner.nextInt();
+        System.out.println("Nhap so nguyen thu ba:");
+        int c=scanner.nextInt();
+        Max(a,b,c);
+    }
+    public static void Max(int a,int b,int c) {
+        int max=a;
+        if(max<b&&b>c){
+            System.out.println(b+" la so lon nhat!");
+        }else if(max<c&&c>b){
+            System.out.println(c+" la so lon nhat");
+        }else{
+            System.out.println(a+" la so lon nhat!");
+        }
+    }
+
+}
